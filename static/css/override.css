@@ -1,0 +1,24 @@
+.tf-topbar .topbar-left h2 {
+  margin-bottom: -15px;
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
+    "WenQuanYi Zen Hei", sans-serif;
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 32px;
+  white-space: nowrap;
+  color: #f8f7f9;
+}
+.topbar-left {
+  display: flex;
+  flex-direction: column;
+}
+/* body {
+  font-family: "Microsoft YaHei", "PingFang SC", "Hiragino Sans GB",
+    "WenQuanYi Zen Hei", sans-serif;
+} */
+.s-break-page .content h2 {
+  font-family: "Microsoft YaHei", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  color: aliceblue;
+}

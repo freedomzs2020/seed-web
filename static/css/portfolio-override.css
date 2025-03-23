@@ -1,0 +1,111 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  /* position: relative; */
+}
+
+.modal-content {
+  background: white;
+  max-width: 800px;
+  width: 90%;
+  max-height: 80vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-radius: 8px;
+  padding: 30px;
+}
+
+.modal-header {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 15px;
+  margin-bottom: 20px;
+}
+
+.modal-title {
+  font-size: 24px;
+  margin: 0;
+  color: #333;
+}
+
+.modal-subtitle {
+  color: #666;
+  font-size: 14px;
+  display: block;
+  margin-top: 5px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  color: #666;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  z-index: 999;
+}
+
+.modal-body {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  white-space: normal; /* 允许内容正常换行 */
+  word-wrap: break-word; /* 当单词过长时换行 */
+}
+
+/* WebKit 内核浏览器（Chrome、Safari） */
+.modal-content::-webkit-scrollbar {
+  width: 8px; /* 滚动条宽度 */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+  background-color: #ccc; /* 滚动条滑块颜色 */
+  border-radius: 4px; /* 滚动条滑块圆角 */
+}
+
+.modal-content::-webkit-scrollbar-track {
+  background-color: #f1f1f1; /* 滚动条轨道颜色 */
+}
+
+/* Firefox */
+.modal-content {
+  scrollbar-width: thin; /* 设置滚动条宽度，可选值：auto | thin | none */
+  scrollbar-color: #ccc #f1f1f1; /* 依次为滑块颜色和轨道颜色 */
+}
+
+/* IE 和 Edge */
+.modal-content {
+  -ms-overflow-style: -ms-autohiding-scrollbar; /* 隐藏滚动条，滚动时显示 */
+}
+.modal-body h4 {
+  color: #2c5b2d;
+  margin: 15px 0 8px;
+  font-size: 18px;
+}
+
+.modal-body p {
+  margin-bottom: 12px;
+  line-height: 1.8;
+}
+
+.modal-body ul {
+  padding-left: 20px;
+  margin: 10px 0;
+}
+
+.modal-body li {
+  list-style: disc;
+  margin-bottom: 8px;
+}
